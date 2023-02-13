@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Poppins", sans-serif;
+
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 960px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px #0000004a;
+    padding: 40px;
+}
+
+.todo-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.input-task {
+    max-width: 100%;
+    min-width: 100%;
+
+    margin-bottom: 20px;
+    padding: 10px 10px 5px 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+
+    overflow: auto;
+
+    word-break: break-all;
+
+    font-size: 15px;
+    text-overflow: clip;
+}
+
+.input-task:focus {
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s;
+
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 1px #0000004a;
+}
+
+.button:hover {
+    color: white;
+    background-color: #0000004a;
+}
+
+.done {
+    text-decoration: line-through;
+    transition: all 1s;
+    background-color: aquamarine;
+}
+
+.list-title{
+    text-align: center;
+    margin: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 100%;
+
+    margin-top: 10px;
+    padding: 22px;
+    border-radius: 10px;
+
+    transition: all 1s;
+
+    list-style: none;
+    box-shadow: 0px 0px 15px 1px #0000004a;
+}
+
+.item > p {
+    word-wrap: break-word;
+    text-align: justify;
+    max-width: calc(100% - 90px);
+}
+
+.container-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.item-button > img {
+    width: 100%;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.327);
+}
+
+.modal > .container{
+    background-color: white;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.edit-form > .button {
+    margin-top: 10px;
+}
